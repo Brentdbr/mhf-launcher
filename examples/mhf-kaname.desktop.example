@@ -1,0 +1,17 @@
+# Desktop entry so the game shows up as a normal application.
+# Install to ~/.local/share/applications/mhf-kaname.desktop and replace
+# /path/to/mhf-kaname-launcher with the absolute path to your checkout.
+# The icon is not shipped here (it is Capcom artwork); extract one from
+# mhf.exe yourself, e.g. with wrestool, or point Icon= at any PNG you like.
+
+[Desktop Entry]
+Type=Application
+Name=Monster Hunter Frontier (Kaname)
+Name[ja]=モンスターハンター フロンティア (Kaname)
+Comment=MHF-Z private server client via Wine
+Exec=/path/to/mhf-kaname-launcher/mhf-launch.sh
+Path=/path/to/mhf-kaname-launcher
+Icon=/path/to/mhf-kaname-launcher/mhf-icon.png
+Terminal=false
+Categories=Game;
+StartupNotify=false

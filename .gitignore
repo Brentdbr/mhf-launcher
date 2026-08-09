@@ -1,0 +1,21 @@
+# Game install — never commit. Capcom copyright, and it is gigabytes.
+Monster Hunter Frontier Online/
+*.exe
+*.dll
+*.dat
+*.erl
+
+# Secrets. login-raw.json contains a live session token; config.json also
+# contains the account password in plaintext.
+logs/
+config.json
+login-raw.json
+*.env
+env
+
+# Game artwork extracted from the client
+mhf-icon.png
+mhf-icon.ico
+
+__pycache__/
+*.pyc

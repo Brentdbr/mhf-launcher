@@ -1,0 +1,30 @@
+# SSH port forwards to the Erupe host.
+# Install to ~/.config/systemd/user/mhf-tunnel.service, then:
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now mhf-tunnel.service
+#   loginctl enable-linger "$USER"    # so it survives across logins
+#
+# Requires key-based SSH login to the server (BatchMode=yes will not prompt).
+# Replace SERVER_USER and SERVER_HOST below.
+
+[Unit]
+Description=MHF Erupe local port forwards (8080 API / 53310 Entrance / 53312 Sign)
+After=network-online.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/ssh -N \
+  -o BatchMode=yes \
+  -o ExitOnForwardFailure=yes \
+  -o ServerAliveInterval=15 \
+  -o ServerAliveCountMax=3 \
+  -o ConnectTimeout=10 \
+  -L 8080:127.0.0.1:8080 \
+  -L 53310:127.0.0.1:53310 \
+  -L 53312:127.0.0.1:53312 \
+  SERVER_USER@SERVER_HOST
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
