@@ -5,13 +5,31 @@ Monster Hunter Frontier Online/
 *.dat
 *.erl
 
+# TypeScript and Node related ignores.
+logs/
+dist/
+build/
+out/
+tsbuildinfo/
+*tsbuildinfo
+node_modules/
+jspm_packages/
+web_modules/
+
 # Secrets. login-raw.json contains a live session token; config.json also
 # contains the account password in plaintext.
-logs/
 config.json
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 login-raw.json
+.DS_Store
+Thumbs.db
 *.env
 env
+.vscode/
 
 # Game artwork extracted from the client
 mhf-icon.png

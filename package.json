@@ -1,0 +1,31 @@
+{
+  "name": "mhf-launcher",
+  "version": "1.0.0",
+  "description": "Electron-based MHF Launcher with no server-sided editing required to function.",
+  "main": "dist/main.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brentdbr/mhf-launcher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Brentdbr/mhf-launcher/issues"
+  },
+  "homepage": "https://github.com/Brentdbr/mhf-launcher#readme",
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "electron": "^43.3.0",
+    "typescript": "^7.0.2"
+  }
+}
