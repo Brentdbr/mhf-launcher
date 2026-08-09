@@ -9,8 +9,6 @@ generates the `config.json` that a launcher would have produced and hands it to
 [`mhf-iel-cli.exe`](https://github.com/rockisch/mhf-iel), which starts the game from an
 already-authenticated session.
 
-日本語版: [README.ja.md](README.ja.md)
-
 > This repository contains **no game files** — no executables, no `dat/`, no Capcom assets or
 > text. It is glue code only. You must supply your own client and run your own server.
 
@@ -199,7 +197,8 @@ you operate yourself. Bring your own client.
 - [Erupe](https://github.com/ZeruLight/Erupe) — the Monster Hunter Frontier server emulator
 - [rockisch/mhf-iel](https://github.com/rockisch/mhf-iel) — the IE-free launcher whose CLI build
   makes this whole approach possible
+- [GUEVARA1962/mhf-kaname-launcher](https://github.com/GUEVARA1962/mhf-kaname-launcher) — as well as this being a direct fork from it, though not directly utilizing the python code anymore, a lot of the logic is rewritten into typescript/electron code. Without him laying the foundation this would not have been possible.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+CUSTOM — see [LICENSE](LICENSE).

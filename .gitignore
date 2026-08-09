@@ -30,6 +30,7 @@ Thumbs.db
 *.env
 env
 .vscode/
+*notes.txt
 
 # Game artwork extracted from the client
 mhf-icon.png
